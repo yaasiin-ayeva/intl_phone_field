@@ -1,53 +1,32 @@
 # International Phone Field Package
 
-[![pub package](https://img.shields.io/pub/v/intl_phone_field.svg)](https://pub.dev/packages/intl_phone_field)
-[![CI](https://github.com/vanshg395/intl_phone_field/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/vanshg395/intl_phone_field/actions/workflows/ci.yml)
+[![CI](https://github.com/yaasiin-ayeva/intl_phone_field/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/yaasiin-ayeva/intl_phone_field/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A customised Flutter TextFormField to input international phone number along with country code.
+A specialized Flutter TextFormField designed for seamless input of international phone numbers, complete with country code selection.
 
-This widget can be used to make customised text field to take phone number input for any country along with an option to choose country code from a dropdown.
+Allows users to input phone numbers for any country and provides a dropdown menu for selecting the appropriate country code.
 
-## ⚠️ The package is deprecated and this repository is no longer maintained ⚠️
+## About
 
-As of June 2021, I, @marcaureln, have been maintaining this Flutter package initially created by @vanshg395. Regrettably, Vansh has been unresponsive, and I am unable to release new versions (the last release is 6 months old as of writing).
+This is intl_phone_field, a fork of the original [intl_phone_field](https://github.com/vanshg395/intl_phone_field) package. 
 
-Considering this, I recommend users to explore alternatives on [pub.dev](https://pub.dev/) or, if interested, fork this repository for continued support. Life can be hectic, and I wish Vansh is doing well.
-
-Thank you for your understanding and continued support.
-
-<details>
-  <summary>Old Readme</summary>
+This fork introduces important fixes and will continue delivering updates and improvements over time.
 
 ## Screenshots
 
-<img src="https://github.com/vanshg395/intl_phone_field/blob/master/1.png?raw=true" height="500px"> <img src="https://github.com/vanshg395/intl_phone_field/blob/master/2.png?raw=true" height="500px"> <img src="https://github.com/vanshg395/intl_phone_field/blob/master/3.png?raw=true" height="500px">
+<img src="https://github.com/yaasiin-ayeva/intl_phone_field/blob/master/1.png?raw=true" height="500px"> <img src="https://github.com/yaasiin-ayeva/intl_phone_field/blob/master/2.png?raw=true" height="500px"> <img src="https://github.com/yaasiin-ayeva/intl_phone_field/blob/master/3.png?raw=true" height="500px">
 
-## Installing
+## Get started
 
-To use this package:
-
-Run this command:
-
-```yaml
-flutter pub add intl_phone_field
-```
-
-Or, add the following to your `pubspec.yaml` file:
-
-```yaml
-dependencies:
-  intl_phone_field: ^<latest_version>
-```
-
-Sometimes you may want to use the latest version of the package, instead of a published version. To do that, use the `git` syntax:
+To use this package, add this to your pubspec.yaml
 
 ```yaml
 dependencies:
   intl_phone_field:
     git:
-      url: git://github.com/vanshg395/intl_phone_field.git
-      ref: master
+      url: https://github.com/yaasiin-ayeva/intl_phone_field.git
+      ref: main
 ```
 
 ## How to Use
@@ -62,7 +41,7 @@ IntlPhoneField(
             borderSide: BorderSide(),
         ),
     ),
-    initialCountryCode: 'IN',
+    initialCountryCode: 'TG',
     onChanged: (phone) {
         print(phone.completeNumber);
     },
@@ -85,7 +64,11 @@ Comment on Issue or Pull Request, asking @all-contributors to add a contributor:
 
 **\<contributions>**: See the [Emoji Key (Contribution Types Reference)](https://allcontributors.org/docs/en/emoji-key) for a list of valid contribution types.
 
-## Maintainers
+## Maintainer
+
+- [Yaasiin AYEVA](https://github.com/yaasiin-ayeva)
+
+## Previous Maintainers
 
 - [Vansh Goel](https://github.com/vanshg395/)
 - [Alex N'Guessan](https://github.com/marcaureln/)
